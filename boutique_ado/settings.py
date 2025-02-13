@@ -26,11 +26,12 @@ SECRET_KEY = 'django-insecure-6%9%qe*tii72+rmh@=*9mx@qx3^n%-oo7vo(28ussec#1%f=26
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-catgriffin8-boutiqueado-zb1cdzjd7gs.ws.codeinstitute-ide.net']
+ALLOWED_HOSTS = ['127.0.0.1',
+                 'herokuapp.com']
 
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://*.ws.codeinstitute-ide.net',
+    'https://localhost',
 ]
 
 
@@ -109,7 +110,7 @@ SITE_ID = 1
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
-ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
+ACCOUNT_LOGIN_METHODS = {'email', 'username'}
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
 ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
