@@ -105,7 +105,7 @@ form.addEventListener('submit', function(ev) {
                 $('#payment-form').fadeToggle(100);
                 $('#loading-overlay').fadeToggle(100);
                 card.update({ 'disabled': false});
-                $('#submit-button').attr('disabled', false);
+                $('#submit-button').attr('disabled', false); 
             } else {
                 if (result.paymentIntent.status === 'succeeded') {
                     form.submit();
@@ -117,3 +117,8 @@ form.addEventListener('submit', function(ev) {
         location.reload();
     })
 });
+
+if (!card) {
+    console.error("Stripe card element is not initialized.");
+}
+
