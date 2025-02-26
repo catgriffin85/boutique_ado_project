@@ -1,0 +1,1 @@
+web: gunicorn boutique-ado-walkthrough-cg.wsgi:application
