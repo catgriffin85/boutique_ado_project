@@ -30,12 +30,12 @@ SECRET_KEY = 'SECRET_KEY'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['127.0.0.1',
-                 'localhost',
-                 'herokuapp.com',
+ALLOWED_HOSTS = ['127.0.0.1',  
                  'boutique-ado-walkthrough-cg-ca8cc69d19fd.herokuapp.com/',
 ]
 
+#'localhost',
+#'herokuapp.com',
 
 CSRF_TRUSTED_ORIGINS = [
     'https://localhost',
